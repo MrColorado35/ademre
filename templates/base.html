@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Import jQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <!-- Import CSS from Bootstrap, Font-awesome and Materialize -->
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+<!--Import Google Fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Import embedded CSS -->
+<link rel="stylesheet" href="../static/css/style.css">
+<title>Pol_speak. Learn few useful Polish words</title>
+</head>
+<body>
+    <nav class="bg-drk">
+        <div class="nav-wrapper">
+        <a href="{{url_for('index')}}" class="brand-logo right">Pol_speak</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="{{url_for('admin')}}">Admin</a></li>
+                <li><a href="{{url_for('user')}}">Student</a></li>
+                <li><a href="{{url_for('all_words')}}">All words</a></li>
+                <li><a href="{{url_for('add_word')}}">Add word</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container whole-page">
+
+        {% block content %}
+
+
+        {% endblock %}
+    </div>
+    <footer class="bg-love margin-top">
+        <div class="row no-bottom">
+            <div class="col s12 m4">
+                <h6 class="center">The reason</h6>
+                <p class="justify">This simple app has been made, to provide you with some common words and sentences in        Polish.</p>
+                <p class="justify">It will enable you to make quick friends of any Poles you will ever meet.</p>
+            </div>
+            <div class="col s12 m4">
+                <h6 class="center">Contact us</h6>
+                <p class="justify">Have you got an idea for more words or sentences that you would like to learn?</p>
+                <a href="contact.html">Please contact us by clicking here</a>
+            </div>
+            <div class="col s12 m4">
+                <h6 class="center">Social Media</h6>
+
+            </div>
+        </div>
+    </footer>
+<!-- Import JavaScript -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function() {
+    $('select').material_select();
+  });
+  </script>
+</body>
+</html>
