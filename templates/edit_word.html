@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 class="center">Edit word:</h2>
+ <div class="row">
+    <form action="{{url_for('update_word', word_id=word._id)}}" method="POST" class="col s12">
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="english_word" name="eng" type="text" class="validate" value="{{word.eng}}">
+          <label for="english_word">English Word: </label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="polish_word" name="gesture" type="text" class="validate" value="{{word.gesture}}">
+          <label for="polish_word">Gesture: </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="pronunciation" name="name" type="text" class="validate" value="{{word.name}}">
+          <label for="pronunciation">Name: </label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="more_info" name="more_info" type="text" class="validate" value="{{word.more_info}}">
+          <label for="more_info">More info: </label>
+        </div>
+      </div>
+     
+       
+       <div class="row center">
+            <button class="btn waves-effect waves-light bg-blue" type="submit" >Edit word
+            <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </form>
+  </div>
+
+
+{% endblock %}

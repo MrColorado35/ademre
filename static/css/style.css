@@ -1,0 +1,144 @@
+body {
+    background-color: #d7dedc;
+    color: #0b0b0b;
+}
+
+/* --------------------------------------Colors */
+
+.bg-blue {
+    background-color: #20a4f3;
+}
+
+.bg-red {
+    background-color: #a30b37;
+}
+
+ .color-red {
+     color: #a30b37;
+ }
+
+.bg-drk {
+    background-color: #2d3142;
+    color:  aliceblue;
+}
+
+.bg-light {
+    background-color: #d7dedc;
+}
+
+.bg-love {
+    background-color: #561f37;
+    color: aliceblue;
+}
+
+.opacity {
+    opacity: 0.7;
+}
+
+.no-bg {
+    background-color: inherit;
+}
+
+/* .float-right {
+    float: right;
+    clear: both;
+} */
+/* --------------------------------------- General style */
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+    object-position: center;
+}
+
+.wide {
+    width: 100%;
+}
+
+.high {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.whole-page {
+    min-height: 450px;
+}
+
+.padding-5 {
+    padding: 5%;
+}
+
+.padding-left {
+    padding-left: 20%;
+}
+
+.margin-top {
+    margin-top: 5%;
+}
+
+/* .top-one {
+    margin-top: 2px;
+} */
+
+.margin-right {
+    margin-right: 5%;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.margin {
+    margin: 3%;
+}
+
+/* .margin-sides {
+    margin: 0 5%;
+} */
+
+/* .tall {
+    height: 30px;
+} */
+
+/* .right {
+    text-align: right;
+    object-position: right;
+} */
+
+.no-bottom {
+    margin-bottom: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+/* ----------------------------------- Nav  */
+
+nav {
+    font-family: 'Piedra', cursive;
+    letter-spacing: 4px;
+}
+
+
+/* ----------------------------------- Footer */
+
+footer {
+    display: block;
+    position:relative;
+    bottom: 0;
+    /* margin-bottom: 0!important; */
+    min-height: 100px;
+    width: 100%;
+
+}
