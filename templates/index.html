@@ -6,17 +6,24 @@
 {% block content %}
 
     <section class="center">
-        <div class="row">
-            <h2>Welcome to our page!</h2>
-            <h3>Here you can learn some every-day Polish, that you can use at work, or talking to the person you are attracted to.</h3>
-            <h4>Please choose who you are:</h4>
+        <div class="row ">
+            <div class="col s12 bg-love margin padding-5">
+            <h2>Welcome to Ademre!</h2>
+            <h5>Here you can be part of fan-art project, that aim to create version of universal, international sign language, that will help us present emotions, while we are covering our faces.</h5>
+            <p>The main idea, as it will be on the picture underneath, once we'll get it done, is that there are three zones of gestures on your body.</p>
+            <p><strong>The bad/angry one:</strong> begins on the level of your knees and goes up to belt. The lower you show the sign, the more contemptful it is.</p>
+            <p><strong>The neutral zone:</strong> begins on the level of your hips and goes just above the belly button. This is a neutral zone, as your hand will be positioned there naturally. It does not have any "hidden" meaning</p>
+            <p><strong>The full of respect zone:</strong> begins above your belly button and goes up to your chin.
+            The higher you go, the more respectful signs become. Although some signs might need to be adjusted here, due to natural restrictions in humans hand movement.</p>
+            <h4>Please choose what would you like to do:</h4>
+            </div>
             <div class="col s12 m6 bg-drk padding-5 opacity ">
-                <a href="{{url_for('all_words')}}" id="user" class=" high"><h3>The Student</h3> 
-                <p class="bg-red"> I would like to learn some Polish </p></a>
+                <a href="{{url_for('all_words')}}" id="user" class=" high"><h3>Learn</h3> 
+                <p class="bg-love"> I would like to see and learn your signs. </p></a>
             </div>
             <div class="col s12 m6 bg-drk padding-5">
-                <a href="{{url_for('admin')}}" id="admin" class=" high "><h3>The Admin</h3> 
-                <p> I speak Polish and want to help improving your database </p></a>
+                <a href="{{url_for('add_word')}}" id="admin" class=" high "><h3>Create</h3> 
+                <p class="bg-love"> I've got a lot of ideas and would like to share them.</p></a>
             </div>
         </div>
     </section> 

@@ -76,6 +76,10 @@ def remove_word(word_id):
     return redirect(url_for('all_words'))
 
 
+@app.route('/contact.html')
+def contact():
+    return render_template("contact.html")
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

@@ -25,8 +25,9 @@
         <div class="nav-wrapper">
         <a href="{{url_for('index')}}" class="brand-logo right">Ademre</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="{{url_for('admin')}}">Add new word</a></li>
                 <li><a href="{{url_for('all_words')}}">See all the words</a></li>
+                <li><a href="{{url_for('add_word')}}">Add new word</a></li>                
+                <li><a href="{{url_for('contact')}}">Contact us</a></li>
             </ul>
         </div>
     </nav>
@@ -41,16 +42,17 @@
         <div class="row no-bottom">
             <div class="col s12 m4">
                 <h6 class="center">The reason</h6>
-                <p class="justify">This simple app has been made, to provide you with some common words and sentences in        Polish.</p>
-                <p class="justify">It will enable you to make quick friends of any Poles you will ever meet.</p>
+                <p class="justify">This simple app has been made, to provide all fans of "The name of the Wind" with an enviroment, to create left hand sign language of people of Adem.</p>
+                <p class="justify">Please feel free to add your own ideas. The more ideas we've got, the more choice we've got in our small society</p>
             </div>
             <div class="col s12 m4">
                 <h6 class="center">Contact us</h6>
-                <p class="justify">Have you got an idea for more words or sentences that you would like to learn?</p>
-                <a href="contact.html">Please contact us by clicking here</a>
+                <p class="justify">Have you got an idea but don't want to add it yourself?</p>
+                <a class="blackish" href="{{url_for('contact')}}">Please contact us by clicking here (once we'll get it sorted)</a>
             </div>
             <div class="col s12 m4">
                 <h6 class="center">Social Media</h6>
+                <p>Here will be our social media links. Perhaps.</p>
 
             </div>
         </div>
