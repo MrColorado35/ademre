@@ -1,5 +1,5 @@
 body {
-    background-color: #d7dedc;
+    background-color: #f4e1e9;
     color: #0b0b0b;
 }
 
@@ -32,6 +32,11 @@ body {
 
 .bg-love {
     background-color: #561f37;
+    color: aliceblue;
+}
+
+.bg-new {
+    background-color: #782b4c;
     color: aliceblue;
 }
 
