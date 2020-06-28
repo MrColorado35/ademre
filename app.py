@@ -9,12 +9,10 @@ if os.path.exists("env.py"):
 app = Flask(__name__)
 
 app.config["MONGO_URI"] = os.getenv("MONGO_URI")
-# MONGODB_URI = os.getenv("MONGO_URI")
-# DBS_NAME = "ademre"
-# COLLECTION_NAME = "words"
+DBS_NAME = "ademre"
+COLLECTION_NAME = "words"
 
 mongo = PyMongo(app)
-
 WORDS = mongo.db.words.find()
 WORDS_LIST = list(WORDS)
 CATEGORY = mongo.db.category.find()
@@ -32,8 +30,8 @@ def admin():
 
 @app.route('/all_words')
 def all_words():
-    # words = mongo.db.words.find()
-    return render_template("all_words.html", words=WORDS)
+    words = mongo.db.words.find()
+    return render_template("all_words.html", words=words)
 
 
 @app.route('/add_word')
