@@ -49,12 +49,12 @@ def insert_word():
 @app.route('/edit_word/<word_id>')
 def edit_word(word_id):
     the_word = mongo.db.words.find_one({'_id': ObjectId(word_id)})    
-    return render_template("edit_word.html", word=the_word, categories=WORDS_LIST)
+    return render_template("edit_word.html", word=the_word)
 
 
 @app.route('/update_word/<word_id>', methods=['POST'])
 def update_word(word_id):
-    # words = mongo.db.words
+    words = mongo.db.words
     words.update({'_id': ObjectId(word_id)}, 
     {
         'eng': request.form.get('eng'),     
