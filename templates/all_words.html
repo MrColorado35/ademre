@@ -10,14 +10,12 @@
 <div class="row">
     <ul class="collapsible popout " data-collapsible="accordion">
     {% for word in words %} 
-    <!-- <div class="right margin-right no-bg tall">
-    </div> -->
        <li>      
       <div class="collapsible-header ">
             <a href="{{url_for('edit_word', word_id=word._id)}}" class="waves-effect waves-light col s4 bg-blue btn">EDIT</a>
             <p class=" center uppercase col s8"><i class="left material-icons">expand_more</i> <strong> {{ word.eng }} 
             </strong></p>
-            <!-- <a href="{{url_for('delete_word', word_id=word._id)}}" class="waves-effect right col s3 margin-right waves-light btn bg-love">DELETE</a> -->
+            <a href="{{url_for('delete_word', word_id=word._id)}}" class="waves-effect right col s3 margin-right waves-light btn bg-love">DELETE</a>
 
       <!-- <a class="right margin-right bg-blue tall waves-effect waves-light btn center top-one">DELETE</a>          -->
       </div>
