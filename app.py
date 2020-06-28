@@ -2,12 +2,14 @@ import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+if os.path.exists("env.py"):
+    import env
+
 
 app = Flask(__name__)
 
-# os.environ.get('MONGO_URI')
-app.config["MONGO_URI"] = "mongodb+srv://root:r00tUser@myfirstcluster-vdori.mongodb.net/ademre?retryWrites=true&w=majority"
-MONGODB_URI = os.getenv("MONGO_URI")
+app.config["MONGO_URI"] = os.getenv("MONGO_URI")
+# MONGODB_URI = os.getenv("MONGO_URI")
 DBS_NAME = "ademre"
 COLLECTION_NAME = "words"
 
